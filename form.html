@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Govt form</title>
+</head>
+
+<body>
+    <h1 style="display: flex; align-items: center; justify-content: center; color: green;">
+        Hoping Minds
+    </h1>
+    <section style="display: flex; justify-content: center">
+        <div>
+            <form style="max-width: fit-content">
+                <fieldset style="color: green;border-color: yellowgreen;">
+                    <legend>Personal details</legend>
+                    <label for="name">Name</label>
+                    <input type="text" placeholder="full name" id="name" /><br />
+                    <label for="address">Address</label>
+                    <input type="text" id="address" placeholder="mohali" /><br />
+                    <label for="mail">Mail</label>
+                    <input type="email" id="mail"placeholder="xyz@mail.com"/><br>
+                    <label for="Gender">Gender</label>
+                    <input type="radio" id="gender" name="gender" value="Male" />Male
+
+                    <input type="radio" id="gender" name="gender" value="Female" />Female
+                    <input type="radio" id="gender" name="gender" value="Others" />Others<br />
+                    <label for="dob">DOB</label>
+                    <input type="date" id="DOB" /><br />
+                    <label>Employment</label><br />
+                    <input type="radio" id="employment" name="employment" value="employed"/>Employed
+                    <input type="radio" id="employment"name="employment" value="unemployed"/>Unemployed
+                    <input type="radio" id="employment"name="employment" value="self employed"/>self employed<br />
+                    <label>Country name</label>
+                    <input type="text" list="country" />
+                    <datalist id="country">
+                        <option value="india"></option>
+                        <option value="srilanka"></option>
+                        <option value="china"></option>
+                        <option value="nepal"></option>
+                    </datalist>
+                </fieldset>
+                <fieldset style="color: darkgreen;border-color: cadetblue;">
+                    <legend>Qualification</legend>   
+                        <label>Highest Qualification</label>
+                        <input type="text" list="qualification" />
+                        <datalist id="qualification">
+                            <option value="10th"></option> 
+                            <option value="12th"></option> 
+                            <option value="Diploma"></option>
+                            <option value="Graduation"></option>
+                            <option value="Masters"></option>
+    
+                        </datalist><br>
+    
+                        <label for="percentage">Choose your percentage:</label>
+  <select id="percentage" name="percentage">
+    <option value="1st">85-100%</option>
+    <option value="2nd">75-85%</option>
+    <option value="3rd">65-75%</option>
+    <option value="4th">Below 65</option>
+  </select>
+                    </fieldset>
+                
+            </form>
+        
+        
+            <form style="max-width: fit-content">
+                <fieldset style="color: darkgreen;border-color: yellowgreen;">
+                    <legend>Professional summary</legend>
+                    
+                   <textarea name="textarea" id="textarea" cols="40" rows="10"></textarea><br>
+                   
+                    </datalist>
+                </fieldset>
+               <input type="submit">
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
